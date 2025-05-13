@@ -365,15 +365,6 @@ p.subline {
     width: 100%;
 }
 
-.popup .card .subscribe-form .fhp-input
-{
-    display: none;
-
-    pointer-events: none;
-
-    opacity: 0;
-}
-
 .popup .card .subscribe-form input
 {
     font-size: 1.6rem;
@@ -484,6 +475,10 @@ p.subline {
 .popup .card .subscribe-form button[disabled] i
 {
     display: none !important;
+}
+
+.popup .card .subscribe-form .messages {
+    padding-top: 2rem;
 }
 
 .popup .card .subscribe-form .error-message,
