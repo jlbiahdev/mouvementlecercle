@@ -14,7 +14,6 @@ body {
     height: auto;
 
     -webkit-font-smoothing: antialiased;
-
 }
 
 h1,
@@ -110,6 +109,8 @@ a:hover {
     background: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    padding: 0;
+    margin: 0;
 }
 
 .logo-container {
@@ -259,6 +260,7 @@ p.subline {
     background-image: url(../img/card-background.jpg);
     background-position: center;
     background-size: cover;
+    /* border: 2px solid red; */
 }
 
 .popup.show .card
@@ -672,5 +674,21 @@ p.subline {
     .popup.show .card
     {
         top: 0;
+    }
+}
+
+@media (max-width:420px)
+{
+    .popup .card
+    {
+        -webkit-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .popup.show .card
+    {
+        top: 0;
+        /* border: 3px solid red; */
     }
 }
