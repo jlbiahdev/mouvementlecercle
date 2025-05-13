@@ -1,5 +1,5 @@
 function resetControls() {
-  console.log('resetControls');
+  // console.log('resetControls');
   let fullname = document.getElementById('fullname');
   let email = document.getElementById('email');
   let phone = document.getElementById('phone');
@@ -9,15 +9,49 @@ function resetControls() {
   phone.value = '';
 }
 
+
+function hideMessages() {
+  // console.log('hideErrorMessage');
+  let errormessage = document.getElementById('error-message');
+  let successmessage = document.getElementById('success-message');
+
+  errormessage.innerHTML = '';
+  successmessage.innerHTML = '';
+}
+
+function showErrorMessage(errorText) {
+  // console.log('showErrorMessage');
+  let errormessage = document.getElementById('error-message');
+ 
+  errormessage.innerHTML = errorText;
+}
+
 function sendEmail() {
-  console.log('sendEmail');
+  // console.log('sendEmail');
   let form = document.getElementById('subscribe-form');
 
   form.classList.remove('form-error');
+  hideMessages();
 
   let fullname = document.getElementById('fullname').value;
   let email = document.getElementById('email').value;
   let phone = document.getElementById('phone').value;
+
+  if (!fullname) {
+    console.log('fullname is empty');
+    showErrorMessage('Please enter your fullname');
+    form.classList.add('form-error');
+    return;
+  }
+
+  if (!email) {
+    console.log('email is empty');
+    showErrorMessage('Please enter your email');
+    form.classList.add('form-error');
+    return;
+  }
+
+  let str_phone = phone ? `phone: ${phone} '\n` : '';
 
   let params = {
       to_name: 'MLC Support',
@@ -26,10 +60,11 @@ function sendEmail() {
       from_phonenumber: '',
       message: 'email : ' + email + '\n' + 
                 'fullname: ' + fullname + '\n' +
-                'phone: ' + phone + '\n' +
+                str_phone +
                 'message: I am interested in MLC and would like to be notified when it is available.',
       subject: 'Alert for MLC',
-      reply_to: 'admin@cyrano-conseil.com,mouvementlecercle2050@gmail.com',
+      reply_to: 'mouvementlecercle2050@gmail.com',
+      // reply_to: 'jlbiah@gmail.com',
   }
 
   //Create an emailjs account and set your parameters here
