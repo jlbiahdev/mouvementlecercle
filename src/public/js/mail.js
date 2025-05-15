@@ -2,11 +2,13 @@ function resetControls() {
   // console.log('resetControls');
   let fullname = document.getElementById('fullname');
   let email = document.getElementById('email');
-  let phone = document.getElementById('phone');
+  let motivation = document.getElementById('motivation');
+  let contactme = document.getElementById('contact-me').value;
 
   fullname.value = '';
   email.value = '';
-  phone.value = '';
+  motivation.value = '';
+  contactme.value = false;
 }
 
 
@@ -35,7 +37,8 @@ function sendEmail() {
 
   let fullname = document.getElementById('fullname').value;
   let email = document.getElementById('email').value;
-  let phone = document.getElementById('phone').value;
+  let motivation = document.getElementById('motivation').value;
+  let contactme = document.getElementById('contact-me').checked;
 
   if (!fullname) {
     console.log('fullname is empty');
@@ -51,19 +54,18 @@ function sendEmail() {
     return;
   }
 
-  let str_phone = phone ? `phone: ${phone} '\n` : '';
-
   let params = {
       to_name: 'MLC Support',
       from_name: 'MLC curious',
       from_email: 'admin@cyrano-conseil.com',
       from_phonenumber: '',
-      message: 'email : ' + email + '\n' + 
-                'fullname: ' + fullname + '\n' +
-                str_phone +
-                'message: I am interested in MLC and would like to be notified when it is available.',
+      message: '{email : `' + email + '`,\n' + 
+                'fullname: `' + fullname + '`,\n' +
+                'motivation: `' + motivation + '`,\n' +
+                'contactme: ' + contactme + '\n}',
       subject: 'Alert for MLC',
-      reply_to: 'mouvementlecercle2050@gmail.com',
+      // reply_to: 'mouvementlecercle2050@gmail.com',
+      reply_to: 'marcel.monsi@gmail.com',
       // reply_to: 'jlbiah@gmail.com',
   }
 
@@ -81,15 +83,18 @@ function sendEmail() {
       contentType: 'application/json'
   }).done(function() {
     form.classList.add('form-success');
+
     let successmessage = document.getElementById('success-message');
+    
     successmessage.innerHTML = 'Your subscription has been registered';
     resetControls();
   }).fail(function(error) {
       console.log('Oops... ' + JSON.stringify(error));
+
       let errormessage = document.getElementById('error-message');
       let errorText = "A problem occurred while processing your subscription.";
+      
       errormessage.innerHTML = errorText;
       form.classList.add('form-error');
-      // alert(`Un problème est survenu lors de l'envoi de votre mail`)
   });
 }

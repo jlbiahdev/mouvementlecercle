@@ -20,7 +20,7 @@
     
         <div class="container">
             <div class="logo-container">
-                <img class="logo" src="public/img/nologo.png" alt="image">
+                <img class="logo" src="public/img/logo.jpg" alt="image">
             </div>
             
             <div class="header-container">
@@ -56,11 +56,16 @@
                    
                     <!-- FORM -->
                     <form onsubmit="sendEmail(); reset(); return false;" id="subscribe-form" class="subscribe-form">
-
-                       
                         <input type="text" id="fullname" name="fullname" placeholder="* Enter your fullname" onfocus="this.placeholder = ''" onblur="this.placeholder = '* Enter your Email'" class="form-control">
                         <input type="text" id="email" name="email" placeholder="* Enter your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = '* Enter your Email'" class="form-control">
-                        <input type="text" id="phone" name="phone" placeholder="Enter your phone" class="form-control">
+                        <textarea id="motivation" name="motivation" placeholder="Enter your motivation" class="form-control"></textarea>
+                        <!-- I want to be contacted for the next event -->
+                        <div class="checkbox-wrapper-40">
+                        <label>
+                            <input id="contact-me" type="checkbox" /> I want to be contacted for the next event
+                            <span class="checkbox"></span>
+                        </label>
+                        </div>
 
                         <button type="submit" class="btn btn-primary form-control">Subscribe<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
                         
