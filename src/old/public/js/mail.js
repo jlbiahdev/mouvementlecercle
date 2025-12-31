@@ -64,8 +64,8 @@ function sendEmail() {
                 'motivation: `' + motivation + '`,\n' +
                 'contactme: ' + contactme + '\n}',
       subject: 'Alert for MLC',
-      // reply_to: 'mouvementlecercle2050@gmail.com',
-      reply_to: 'marcel.monsi@gmail.com',
+      reply_to: 'mouvementlecercle2050@gmail.com',
+      // reply_to: 'marcel.monsi@gmail.com',
       // reply_to: 'jlbiah@gmail.com',
   }
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./favicon.ico">
+
+        <script src="https://kit.fontawesome.com/9f91a51f96.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script> (function() { emailjs.init('HHi-YtFsGz1QmtvVT'); })(); </script>
+
+        <link rel="stylesheet" type="text/css" href="public/css/plugins.css">
+        <link rel="stylesheet" type="text/css" href="public/css/main.css">
+        <title>MLC Website - Coming Soon</title>
+    </head>
+    <body>
+    
+        <div class="container">
+            <div class="logo-container">
+                <img class="logo" src="public/img/logo.jpg" alt="image">
+            </div>
+            
+            <div class="header-container">
+                <h1>We're Coming Soon..</h1>
+
+                <p class="subline">We're working on our new website. Join our newsletter and get notifed.</p>
+
+                <div class="open-popup">Notify Me</div>
+
+            </div>
+
+            <div class="footer">
+                <p>© 2025 <strong>Mouvement Le Cercle </strong> | Design by <a href="https://www.cyrano-conseil.com" target="_blank" rel="noopener" rel="noreferrer">Cyrano Conseil.</a> All rights reserved</p>
+            </div>
+
+        </div>
+       
+
+        <!-- POPUP ( SUBSCRIBE ) -->
+        <div class="popup">
+           
+           
+            <!-- CARD -->
+            <div class="card">
+                    
+                    
+                    <!-- CARD CLOSE BUTTON -->
+                    <div class="close-popup close-button"></div>
+                   
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <h3>Sign Up</h3>
+                    <p class="subline">Signing up to our newsletter gives you exclusive access to our Website Launch!</p>
+                   
+                    <!-- FORM -->
+                    <form onsubmit="sendEmail(); reset(); return false;" id="subscribe-form" class="subscribe-form">
+                        <input type="text" id="fullname" name="fullname" placeholder="* Enter your fullname" onfocus="this.placeholder = ''" onblur="this.placeholder = '* Enter your Email'" class="form-control">
+                        <input type="text" id="email" name="email" placeholder="* Enter your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = '* Enter your Email'" class="form-control">
+                        <textarea id="motivation" name="motivation" placeholder="Enter your motivation" class="form-control"></textarea>
+                        <!-- I want to be contacted for the next event -->
+                        <input id="contact-me" type="checkbox" /> I want to be contacted for the next event
+
+                        <button type="submit" class="btn btn-primary form-control">Subscribe<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                        
+                        <div class="messages">
+                            <div id="error-message" class="error-message">* Enter a valid Email Address!</div>
+                            <div id="success-message" class="success-message">* Successfuly Subscribed!</div>
+                        </div>
+                    </form>
+                
+            </div>
+            
+        </div>
+        <!-- /POPUP ( SUBSCRIBE ) -->
+        <!-- 
+            https://unsplash.com/photos/yellow-click-pen-on-white-printer-paper-gcHFXsdcmJE?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash 
+            https://unsplash.com/photos/man-holding-incandescent-bulb-7e2pe9wjL9M?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+        -->
+
+        <!-- JAVASCRIPTS -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script type="text/javascript" src="public/js/plugins.js"></script>
+        <script type="text/javascript" src="public/js/main.js"></script>
+        <script type="text/javascript" src="public/js/mail.js"></script>
+        
+    </body>
+</html>

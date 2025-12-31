@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Actions - Mouvement Le Cercle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header fixe -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo Association" id="logo-img">
+                <span class="logo-text">Mouvement Le Cercle</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+                    <li><a href="presentation.html" class="nav-link">Présentation</a></li>
+                    <li><a href="actions.html" class="nav-link active">Actions</a></li>
+                    <li><a href="membres.html" class="nav-link">Membres</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Nos Actions</h1>
+            <p>Deux piliers d'action pour un impact maximal</p>
+        </div>
+    </section>
+
+    <!-- Navigation par onglets -->
+    <section class="tabs-section">
+        <div class="container">
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="events">Événements & Sport</button>
+                <button class="tab-btn" data-tab="humanitarian">Actions Humanitaires</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenu Événements & Sport -->
+    <section class="tab-content active" id="events">
+        <div class="container">
+            <div class="section-header">
+                <h2>Événements & Activités Sportives</h2>
+                <p>Créer des liens à travers le sport et les rencontres festives</p>
+            </div>
+
+            <!-- Football -->
+            <div class="activity-showcase">
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="football.jpg" alt="Tournoi de Football">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Tournois de Football</h3>
+                        <p>Nos tournois de football intercommunautaires rassemblent chaque année plus de 200 participants. Ces événements sportifs sont l'occasion de renforcer les liens entre membres de la diaspora tout en promouvant les valeurs de sportivité et de fair-play.</p>
+                        
+                        <div class="activity-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>4 tournois/an</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>200+ participants</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>16 équipes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-highlights">
+                            <h4>Points forts 2025 :</h4>
+                            <ul>
+                                <li>Championnat d'Île-de-France (Mai 2025)</li>
+                                <li>Tournoi de Marseille (Juillet 2025)</li>
+                                <li>Coupe de Lyon (Septembre 2025)</li>
+                                <li>Championnat de France (Novembre 2025)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Billard -->
+            <div class="activity-showcase">
+                <div class="activity-item reverse">
+                    <div class="activity-image">
+                        <img src="billard.jpg" alt="Tournoi de Billard">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Championnats de Billard</h3>
+                        <p>Les soirées billard sont devenues un rendez-vous incontournable pour nos membres. Ces moments conviviaux permettent des échanges plus intimes et favorisent le networking professionnel dans une ambiance détendue.</p>
+                        
+                        <div class="activity-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>2 fois/mois</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>40 participants</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-medal"></i>
+                                <span>Tournoi annuel</span>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-highlights">
+                            <h4>Catégories :</h4>
+                            <ul>
+                                <li>Pool (8-ball, 9-ball)</li>
+                                <li>Billard français (Carambole)</li>
+                                <li>Snooker amateur</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Golf -->
+            <div class="activity-showcase">
+                <div class="activity-item">
+                    <div class="activity-image">
+                        <img src="golf.jpg" alt="Tournoi de Golf">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Tournois de Golf</h3>
+                        <p>Pour nos membres adeptes du golf, nous organisons des tournois sur les plus beaux parcours de France. Ces événements allient sport de haut niveau et networking d'affaires dans un cadre exceptionnel.</p>
+                        
+                        <div class="activity-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>3 tournois/an</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>60 golfeurs</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-golf-ball"></i>
+                                <span>Parcours prestige</span>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-highlights">
+                            <h4>Prochains parcours :</h4>
+                            <ul>
+                                <li>Golf de Saint-Cloud (Printemps 2025)</li>
+                                <li>Golf d'Augerville (Été 2025)</li>
+                                <li>Golf de Chantilly (Automne 2025)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Afterworks -->
+            <div class="activity-showcase">
+                <div class="activity-item reverse">
+                    <div class="activity-image">
+                        <img src="afterwork.jpg" alt="Afterwork Networking">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Afterworks & Networking</h3>
+                        <p>Nos afterworks mensuels sont l'occasion idéale pour échanger dans un cadre détendu. Ces événements favorisent les rencontres professionnelles et personnelles entre membres de la communauté.</p>
+                        
+                        <div class="activity-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>1 fois/mois</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>80-100 participants</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-city"></i>
+                                <span>Différentes villes</span>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-highlights">
+                            <h4>Thèmes récents :</h4>
+                            <ul>
+                                <li>"Entrepreneuriat et diaspora"</li>
+                                <li>"Réussite professionnelle en France"</li>
+                                <li>"Investir en Afrique"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenu Actions Humanitaires -->
+    <section class="tab-content" id="humanitarian">
+        <div class="container">
+            <div class="section-header">
+                <h2>Actions Humanitaires en Afrique</h2>
+                <p>Un impact concret et mesurable sur les communautés</p>
+            </div>
+
+            <!-- Éducation -->
+            <div class="humanitarian-showcase">
+                <div class="humanitarian-item">
+                    <div class="humanitarian-image">
+                        <img src="education.jpg" alt="Projets éducatifs">
+                    </div>
+                    <div class="humanitarian-content">
+                        <h3>Projets Éducatifs</h3>
+                        <p>L'éducation est au cœur de nos priorités. Nous croyons que chaque enfant mérite un accès équitable à une éducation de qualité. Nos projets vont de la construction d'écoles à la fourniture de matériel scolaire.</p>
+                        
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Écoles construites</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">900+</span>
+                                <span class="stat-label">Élants scolarisés</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2500</span>
+                                <span class="stat-label">Kits scolaires</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-details">
+                            <h4>Réalisations concrètes :</h4>
+                            <div class="achievements-grid">
+                                <div class="achievement-item">
+                                    <i class="fas fa-school"></i>
+                                    <h5>École primaire de Kati, Mali</h5>
+                                    <p>Construction de 6 classes, bibliothèque et cantine</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <i class="fas fa-book"></i>
+                                    <h5>Fourniture de manuels scolaires</h5>
+                                    <p>1500 manuels pour les écoles rurales du Burkina Faso</p>
+                                </div>
+                                <div class="achievement-item">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                    <h5>Formation des enseignants</h5>
+                                    <p>Ateliers pédagogiques pour 45 enseignants</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Santé -->
+            <div class="humanitarian-showcase">
+                <div class="humanitarian-item reverse">
+                    <div class="humanitarian-image">
+                        <img src="health.jpg" alt="Projets santé">
+                    </div>
+                    <div class="humanitarian-content">
+                        <h3>Projets de Santé</h3>
+                        <p>L'accès aux soins de santé est un droit fondamental. Nous finançons des équipements médicaux, organisons des missions médicales et soutenons les centres de santé dans les zones les plus reculées.</p>
+                        
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Centres de santé</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2500+</span>
+                                <span class="stat-label">Patients soignés</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Missions médicales</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-details">
+                            <h4>Équipements fournis :</h4>
+                            <div class="equipments-grid">
+                                <div class="equipment-item">
+                                    <i class="fas fa-stethoscope"></i>
+                                    <span>Matériel médical complet</span>
+                                </div>
+                                <div class="equipment-item">
+                                    <i class="fas fa-pills"></i>
+                                    <span>Pharmacies de village</span>
+                                </div>
+                                <div class="equipment-item">
+                                    <i class="fas fa-ambulance"></i>
+                                    <span>Véhicules médicaux</span>
+                                </div>
+                                <div class="equipment-item">
+                                    <i class="fas fa-microscope"></i>
+                                    <span>Laboratoires mobiles</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Développement Communautaire -->
+            <div class="humanitarian-showcase">
+                <div class="humanitarian-item">
+                    <div class="humanitarian-image">
+                        <img src="community.jpg" alt="Développement communautaire">
+                    </div>
+                    <div class="humanitarian-content">
+                        <h3>Développement Communautaire</h3>
+                        <p>Au-delà de l'éducation et de la santé, nous soutenons des projets de développement communautaire : accès à l'eau potable, énergie solaire, et formation professionnelle pour les jeunes.</p>
+                        
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Puits construits</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">500</span>
+                                <span class="stat-label">Familles électrifiées</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">200</span>
+                                <span class="stat-label">Jeunes formés</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-highlights">
+                            <h4>Projets phares :</h4>
+                            <ul>
+                                <li><strong>Forage de puits</strong> dans 8 villages du Sénégal</li>
+                                <li><strong>Installation de panneaux solaires</strong> dans 3 écoles</li>
+                                <li><strong>Ateliers de formation professionnelle</strong> pour les jeunes</li>
+                                <li><strong>Programme d'entrepreneuriat féminin</strong> au Mali</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Urgences Humanitaires -->
+            <div class="humanitarian-showcase">
+                <div class="humanitarian-item reverse">
+                    <div class="humanitarian-image">
+                        <img src="emergency.jpg" alt="Urgences humanitaires">
+                    </div>
+                    <div class="humanitarian-content">
+                        <h3>Urgences Humanitaires</h3>
+                        <p>Nous répondons rapidement aux crises humanitaires en Afrique. Nos interventions d'urgence incluent la distribution de nourriture, de kits d'hygiène et de matériel de première nécessité.</p>
+                        
+                        <div class="emergency-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Interventions d'urgence</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1500</span>
+                                <span class="stat-label">Personnes aidées</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">300</span>
+                                <span class="stat-label">Kits alimentaires</span>
+                            </div>
+                        </div>
+                        
+                        <div class="emergency-response">
+                            <h4>Interventions récentes :</h4>
+                            <div class="response-timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2025</div>
+                                    <div class="timeline-content">
+                                        <h5>Inondations au Burkina Faso</h5>
+                                        <p>Distribution de kits d'urgence à 200 familles</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2023</div>
+                                    <div class="timeline-content">
+                                        <h5>Sécheresse au Mali</h5>
+                                        <p>Campagne de distribution de nourriture</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Soutenez nos actions</h2>
+                <p>Votre contribution peut faire la différence dans la vie de nombreuses personnes</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Faire un don</a>
+                    <a href="#" class="btn btn-secondary">Devenir bénévole</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mouvement Le Cercle</h3>
+                    <p>Connecter les membres de la diaspora africaine en France à travers le sport, les événements et les actions sociales.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contact@mouvementlecercle.com</p>
+                        <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Restez informé de nos actualités et événements</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mouvement Le Cercle. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
