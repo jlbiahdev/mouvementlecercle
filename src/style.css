@@ -324,6 +324,12 @@ body {
     background: var(--bg-light);
 }
 
+@media (max-width: 768px) {
+    .presentation-preview {
+        padding: 60px 0;
+    }
+}
+
 .mission-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -769,6 +775,45 @@ body {
     
     .nav-list {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        gap: 0;
+    }
+    
+    .nav-list li {
+        margin: 0;
+        border-bottom: 1px solid rgba(0, 51, 102, 0.1);
+    }
+    
+    .nav-list li:last-child {
+        border-bottom: none;
+    }
+    
+    .nav-link {
+        display: block;
+        padding: 15px 20px;
+        width: 100%;
+    }
+    
+    .nav-link.active::after {
+        display: none;
+    }
+    
+    .hero {
+        min-height: auto;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+    
+    .hero-content {
+        margin-bottom: 20px;
     }
     
     .hero-title {
@@ -776,9 +821,31 @@ body {
     }
     
     .hero-stats {
+        position: static;
+        transform: none;
         flex-direction: column;
-        gap: 20px;
-        padding: 20px 30px;
+        gap: 15px;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    
+    .stat-item {
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .stat-item:last-child {
+        border-bottom: none;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .stat-label {
+        font-size: 0.85rem;
     }
     
     .mission-grid {
