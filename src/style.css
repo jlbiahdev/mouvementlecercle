@@ -141,10 +141,11 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     overflow: hidden;
+    padding-top: 100px;
 }
 
 .hero-background {
@@ -154,7 +155,7 @@ body {
     right: 0;
     bottom: 0;
     background: linear-gradient(135deg, rgba(0, 51, 102, 0.9), rgba(0, 114, 206, 0.8)), 
-                url('hero-bg.jpg') center/cover;
+                url('public/img/hero-bg.jpg') center/cover;
     z-index: -1;
 }
 
@@ -171,6 +172,8 @@ body {
     max-width: 800px;
     color: white;
     margin-bottom: 60px;
+    position: relative;
+    z-index: 10;
 }
 
 .hero-title {
@@ -243,10 +246,8 @@ body {
 }
 
 .hero-stats {
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    margin-top: 40px;
     display: flex;
     gap: 60px;
     background: rgba(255, 255, 255, 0.1);
@@ -254,6 +255,8 @@ body {
     padding: 30px 60px;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: center;
+    width: 100%;
 }
 
 .hero-stats.stats-section {
@@ -263,6 +266,18 @@ body {
 .stat-item {
     text-align: center;
     color: white;
+    background: #FFFFFF;
+    padding: 25px 20px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 51, 102, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: var(--transition);
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 51, 102, 0.2);
 }
 
 .stat-number {
@@ -276,7 +291,8 @@ body {
 .stat-label {
     font-size: 0.9rem;
     opacity: 0.9;
-    color: var(--text-light);
+    color: #666;
+    display: block;
 }
 
 /* Page Header */
