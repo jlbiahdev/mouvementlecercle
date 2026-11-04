@@ -28,7 +28,7 @@ Les projets commencent souvent par une discussion avant tout code.
 
 ## Spécificités de ce dépôt (mouvementlecercle.com)
 
-- **Site statique** (HTML, CSS, jQuery) dans `src/`, en français. Seul `src/` est publié, sauf `src/old/` (ancienne version, exclue du déploiement).
+- **Site statique** (HTML, CSS, jQuery) dans `src/`, en français. Seul `src/` est publié.
 - **Newsletter** : les formulaires `.newsletter-form` envoient l'adresse saisie à `src/envoi.php`, qui la transmet à **contact@mouvementlecercle.com** avec la fonction `mail()`. Aucun service tiers, rien n'est enregistré sur le serveur. Pot de miel `site_web`, validation côté serveur ; succès vers `merci.html`, échec vers une page d'erreur. L'envoi réel ne se teste qu'en production. Même mécanisme que nzuane.org.
 - **Cache** : incrémenter `?v=AAAAMMJJ` sur `style.css` et `script.js` dans toutes les pages à chaque modification de CSS ou de JS.
 - **Branche principale** : `main`. Chaque merge déclenche le déploiement FTPS vers Hostinger (`.github/workflows/deploy.yml`, secrets `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`). Ne jamais écrire de secret dans le dépôt (le dépôt est public).

@@ -5,13 +5,11 @@ status: en cours
 
 ## Attentes
 - Site du Mouvement Le Cercle (mouvementlecercle.com), hébergé chez Hostinger.
-- Inscriptions à la newsletter envoyées par Hostinger (`src/envoi.php`) vers contact@mouvementlecercle.com ; jusqu'ici l'envoi était simulé et aucune inscription n'était transmise (en PR).
+- Inscriptions à la newsletter envoyées par Hostinger (`src/envoi.php`) vers contact@mouvementlecercle.com (déployé le 4 novembre 2026).
 
 ## Blocages
 - Aucun
 
 ## Prochaines étapes
-- Créer les secrets GitHub du déploiement (`FTP_SERVER` = nom d'hôte du serveur Hostinger, `FTP_USERNAME`, `FTP_PASSWORD`) et, si besoin, la variable `FTP_SERVER_DIR`, puis merger la PR.
-- Après le premier déploiement : s'inscrire à la newsletter depuis le site et vérifier la réception sur contact@mouvementlecercle.com (indésirables compris).
-- `src/old/` (ancienne version, avec EmailJS et SmtpJS) : exclu du déploiement ; à supprimer du serveur s'il y est encore, et du dépôt si Jean le décide.
-- Lien `ai_project` du projet Claude à renseigner.
+- S'inscrire à la newsletter depuis le site et vérifier la réception sur contact@mouvementlecercle.com (indésirables compris).
+- `old/` (ancienne version, avec EmailJS et SmtpJS) : supprimée du dépôt (décision de Jean) ; à supprimer aussi du serveur s'il y est encore (le déploiement n'efface rien).
