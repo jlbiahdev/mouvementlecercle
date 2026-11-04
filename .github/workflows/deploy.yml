@@ -38,4 +38,3 @@ jobs:
             **/.github/**
             **/.vscode/**
             **/.DS_Store
-            old/**
