@@ -1004,6 +1004,14 @@ body {
     margin-bottom: 20px;
 }
 
+/* Formulaire de la section « Restez informé » : centré, largeur limitée */
+.newsletter-section .newsletter-form {
+    max-width: 520px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
 .newsletter-content p {
     font-size: 1.1rem;
     margin-bottom: 30px;

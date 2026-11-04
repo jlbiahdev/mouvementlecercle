@@ -122,23 +122,6 @@ $(document).ready(function() {
         }
     });
 
-    // Newsletter form submission
-    $('.newsletter-form').submit(function(e) {
-        e.preventDefault();
-        const email = $(this).find('input[type="email"]').val();
-        
-        // Simulate form submission
-        $(this).find('button').text('Merci !').prop('disabled', true);
-        
-        setTimeout(() => {
-            $(this).find('button').text('S\'abonner').prop('disabled', false);
-            $(this).find('input').val('');
-        }, 2000);
-        
-        // Show success message
-        alert('Merci pour votre inscription à notre newsletter !');
-    });
-
     // Parallax effect for hero background
     $(window).scroll(function() {
         const scrolled = $(this).scrollTop();
